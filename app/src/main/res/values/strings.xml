@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">taskmaster</string>
+    <string name="addTaske">ADD TASK</string>
+    <string name="allTasks">All TASKS</string>
+    <string name="all_tasks">All Tasks</string>
+
+    <string name="task_title">Task title</string>
+    <string name="add_task">Add Task</string>
+    <string name="total_tasks">Total tasks</string>
+    <string name="my_task">My Task</string>
+    <string name="task_description">Task Description</string>
+
+    <string name="do_something">Do Something</string>
+    <string name="add_task2">ADD TASK</string>
+    <string name="my_tasks">MY Tasks</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
