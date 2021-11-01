@@ -7,7 +7,9 @@
         <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/activity_add_task.xml" value="0.33" />
         <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/activity_all_taskes.xml" value="0.25" />
-        <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/activity_settings_page.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/activity_task_detailpage.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/content_main.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/STUDENT/AndroidStudioProjects/taskmaster/app/src/main/res/layout/fragment_second.xml" value="0.17916666666666667" />
       </map>
