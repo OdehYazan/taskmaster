@@ -5,8 +5,12 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button addTasksBtn = findViewById(R.id.addTasks);
 
         addTasksBtn.setOnClickListener(view -> {
-            Intent intent1 = new Intent(MainActivity.this,AddTask.class);
+            Intent intent1 = new Intent(MainActivity.this, AddTask.class);
             startActivity(intent1);
         });
 
@@ -34,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
             TextView text = findViewById(R.id.Task1);
             String task1Name = text.getText().toString();
-            goToTask1.putExtra("taskName",task1Name);
+            goToTask1.putExtra("taskName", task1Name);
 
             startActivity(goToTask1);
 
@@ -44,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
             Intent goToTask2 = new Intent(MainActivity.this, TaskDetailPage.class);
 
             TextView text = findViewById(R.id.Task2);
-             String task2Name = text.getText().toString();
-             goToTask2.putExtra("taskName",task2Name);
+            String task2Name = text.getText().toString();
+            goToTask2.putExtra("taskName", task2Name);
 
             startActivity(goToTask2);
 
@@ -56,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             TextView text = findViewById(R.id.Task3);
             String task3Name = text.getText().toString();
-            goToTask3.putExtra("taskName",task3Name);
+            goToTask3.putExtra("taskName", task3Name);
 
             startActivity(goToTask3);
         });
@@ -65,16 +69,26 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        ArrayList<Task> task = new ArrayList<>();
+        task.add(new Task("Task1", "body1", "new"));
+        task.add(new Task("Task2", "body2", "assigned"));
+        task.add(new Task("Task3", "body3", "in progress"));
+        task.add(new Task("Task4", "body4", "complete"));
+
+        RecyclerView allTasksRv = findViewById(R.id.tasksReVi);
+        allTasksRv.setLayoutManager(new LinearLayoutManager(this));
+        allTasksRv.setAdapter(new TaskAdapter(task));
 
     }
+
     @Override
     protected void onResume() {
         super.onResume();
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String UserName = sharedPreferences.getString("UserName","Go to Sittings");
+        String UserName = sharedPreferences.getString("UserName", "Go to Sittings");
 
         TextView welcome = findViewById(R.id.GetUserHome);
-        welcome.setText(UserName+"`s Tasks");
+        welcome.setText(UserName + "`s Tasks");
     }
 }

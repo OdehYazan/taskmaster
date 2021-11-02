@@ -21,10 +21,9 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <TextView
-        android:id="@+id/LoremDeatalis"
+        android:id="@+id/state"
         android:layout_width="291dp"
         android:layout_height="198dp"
-        android:text="GOOD MORNING VIETNAM!!!"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,13 +33,12 @@
         app:layout_constraintVertical_bias="0.372" />
 
     <TextView
-        android:id="@+id/DetaliesLable"
+        android:id="@+id/body"
         android:layout_width="90dp"
         android:layout_height="23dp"
-        android:text="Detalies"
-        android:textSize="17sp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/LoremDeatalis"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/state"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
