@@ -24,3 +24,12 @@
 **when you click on any task it will take you to task detail page and show the task info on that page**<br>
 ![image description](screenshots/lab28-1.png)<br>
 ![image description](screenshots/lab28-2.png)<br>
+
+## Room
+
+**create database using room and DAO**<br>
+**add task now is functional input the data and press add task it will be saved in Db and called when you go back to the home page**<br>
+**and when clicked on it the data will shown in the Task details**<br>
+![image description](screenshots/lab29-1.png)<br>
+![image description](screenshots/lab29-2.png)<br>
+![image description](screenshots/lab29-3.png)<br>

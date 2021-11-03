@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,6 +70,22 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+//        AppDatabase.getInstance(getApplicationContext()).taskDao().delete();
+
+        List<Task> taskDb = AppDatabase.getInstance(getApplicationContext()).taskDao().getAll();
+
+        ArrayList<Task> tasksFromDb = new ArrayList<>();
+        tasksFromDb.add(new Task("Task1", "body1", "new"));
+        tasksFromDb.add(new Task("Task2", "body2", "assigned"));
+        tasksFromDb.add(new Task("Task3", "body3", "in progress"));
+        tasksFromDb.add(new Task("Task4", "body4", "complete"));
+
+        for(Task task:taskDb){
+            tasksFromDb.add(task);
+        }
+
+
+
         ArrayList<Task> task = new ArrayList<>();
         task.add(new Task("Task1", "body1", "new"));
         task.add(new Task("Task2", "body2", "assigned"));
@@ -77,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView allTasksRv = findViewById(R.id.tasksReVi);
         allTasksRv.setLayoutManager(new LinearLayoutManager(this));
-        allTasksRv.setAdapter(new TaskAdapter(task));
+        allTasksRv.setAdapter(new TaskAdapter(tasksFromDb));
 
     }
 
