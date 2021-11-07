@@ -33,3 +33,9 @@
 ![image description](screenshots/lab29-1.png)<br>
 ![image description](screenshots/lab29-2.png)<br>
 ![image description](screenshots/lab29-3.png)<br>
+
+## Espresso and Polish:
+
+1. Espresso Testing : Add Espresso to your application, and use it to test basic functionality of the main components of your application
+
+2. Polish : Complete any remaining feature tasks from previous days’ labs.

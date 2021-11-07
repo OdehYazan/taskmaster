@@ -3,10 +3,10 @@ package com.example.taskmaster;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -79,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
         tasksFromDb.add(new Task("Task2", "body2", "assigned"));
         tasksFromDb.add(new Task("Task3", "body3", "in progress"));
         tasksFromDb.add(new Task("Task4", "body4", "complete"));
+
+//        tasksFromDb.addAll(taskDb); same as for loop
 
         for(Task task:taskDb){
             tasksFromDb.add(task);
