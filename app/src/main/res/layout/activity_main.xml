@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+>
 
 
     <Button
+        android:id="@+id/SittingHome"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="32dp"
+        android:background="#19BFF1"
+        android:text="@string/sittings"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/addTasks"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
         android:id="@+id/addTasks"
-        android:layout_width="109dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="95dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
         android:background="#19BFF1"
         android:text="@string/addTaske"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,29 +50,94 @@
 
     <Button
         android:id="@+id/allTasks"
-        android:layout_width="109dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="90dp"
+        android:layout_height="39dp"
         android:background="#19BFF1"
         android:text="@string/allTasks"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintEnd_toStartOf="@+id/SittingHome"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toEndOf="@+id/addTasks"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.93" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="347dp"
-        android:layout_height="374dp"
+        android:layout_width="251dp"
+        android:layout_height="185dp"
+        android:src="@drawable/task"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.211"
-        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintVertical_bias="0.18"
+        tools:srcCompat="@tools:sample/avatars" />
 
-        android:src="@drawable/task"/>
+    <Button
+        android:id="@+id/Task1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4DD3AD"
+        android:text="Task1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Task2"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/Task2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="#4DD3AD"
+        android:text="Task2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Task3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <Button
+        android:id="@+id/Task3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="#4DD3AD"
+        android:text="Task3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <TextView
+        android:id="@+id/GetUserHome"
+        android:layout_width="165dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="320dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Task2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksReVi"
+        android:layout_width="339dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/Task2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
