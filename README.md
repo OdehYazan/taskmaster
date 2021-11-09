@@ -39,3 +39,8 @@
 1. Espresso Testing : Add Espresso to your application, and use it to test basic functionality of the main components of your application
 
 2. Polish : Complete any remaining feature tasks from previous days’ labs.
+
+## Amplify and DynamoDB
+**connect our app with Aws database and save the tasks on the cloud then get them back and show them in the main page without room**<br>
+![image description](screenshots/lab32.png)<br>
+![image description](screenshots/lab32-1.png)<br>
