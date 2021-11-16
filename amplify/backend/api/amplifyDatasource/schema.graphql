@@ -11,3 +11,8 @@ type Task @model  @key(name: "byTask", fields: ["teamId", "title"])  {
   body: String
   state: String
 }
+type User@model
+{
+  id: ID!
+  name: String
+}
