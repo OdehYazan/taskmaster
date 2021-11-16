@@ -16,10 +16,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/InputUserName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.585" />
 
     <EditText
         android:id="@+id/InputUserName"
@@ -27,24 +27,55 @@
         android:layout_height="65dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="184dp"
         android:ems="10"
-        android:hint="User Name"
+        android:hint="Team Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/SaveUser"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987" />
 
     <Button
         android:id="@+id/SaveUser"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginBottom="280dp"
         android:background="#19BFF1"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:layout_width="318dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputUserName"
+        app:layout_constraintVertical_bias="0.101">
+
+        <RadioButton
+            android:id="@+id/SettingRbtnTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team1" />
+
+        <RadioButton
+            android:id="@+id/SettingRbtnTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team2" />
+
+        <RadioButton
+            android:id="@+id/SettingRbtnTeam3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team3" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
