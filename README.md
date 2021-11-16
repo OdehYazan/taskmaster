@@ -1,11 +1,7 @@
 # TaskMaster
 
-## Related Data
-*create tables for database and connect it with relation with deploy on DynamoDB**
+## Publishing to the Google Play Store
+**publishing to the Google Play Store.**
 
-![image description](screenshots/lab33-1.png)<br>
-![image description](screenshots/lab33-2.png)<br>
-![image description](screenshots/lab33-3.png)<br>
-![image description](screenshots/lab33-4.png)<br>
-![image description](screenshots/lab33-5.png)<br>
+**we need $25 to publish the app**
 
