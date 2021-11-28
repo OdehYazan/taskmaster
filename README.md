@@ -1,13 +1,12 @@
 # TaskMaster
 
-## Cognito
-**Add Cognito to your Amplify setup. Add in user login and sign up flows to your application, using Cognito’s pre-built UI as appropriate. Display the logged in user’s username somewhere relevant in your app.**<br>
+## S3
+**add pic to s3 storage and show it in the app after upload it.**<br>
 
 
-![image](screenshots/lab36.png)
-![image](screenshots/lab36-1.png)
-![image](screenshots/lab36-2.png)
-![image](screenshots/lab36-3.png)
-![image](screenshots/lab36-4.png)
+![i](screenshots/lab37.png)
+![i](screenshots/lab37-1.png)
+![i](screenshots/lab37-2.png)
+![i](screenshots/lab37-3.png)
 
 
