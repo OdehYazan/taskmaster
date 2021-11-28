@@ -10,6 +10,7 @@ type Task @model  @key(name: "byTask", fields: ["teamId", "title"])  {
   title: String!
   body: String
   state: String
+  fileName: String
 }
 type User@model
 {
